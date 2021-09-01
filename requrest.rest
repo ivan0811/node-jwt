@@ -1,0 +1,41 @@
+GET http://localhost:3000/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.NjEyZGQxNjMyNzlkMzdlMjhmZWM5YjYw.klWSZBc1nLSZ1YVoz4WrNh-EH0hO4srrZHIYV5YPn0Q
+
+###
+
+GET http://localhost:3000/generate-password
+
+###
+
+GET http://localhost:3000/check-password
+
+###
+
+POST http://localhost:3000/generate-pass
+Content-Type: application/json
+
+{
+    "password" : "12345678"
+}
+
+###
+
+GET http://localhost:3000/get-users
+
+###
+
+GET http://localhost:3000/get-token
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "user1",
+    "password": "12345678"
+}
+
+###
+
+DELETE http://localhost:3000/logout
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.NjEyZGQxNjMyNzlkMzdlMjhmZWM5YjYw.klWSZBc1nLSZ1YVoz4WrNh-EH0hO4srrZHIYV5YPn0Q
